@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: KBS Plugin : Ingeint POS
+Bundle-SymbolicName: com.kylinsystems.kbs.plugins.ingeint.pos;singleton:=true
+Bundle-Version: 7.1.0.qualifier
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.adempiere.base;bundle-version="0.0.0",
+ org.adempiere.plugin.utils;bundle-version="0.0.0",
+ org.adempiere.ui.zk;bundle-version="0.0.0",
+ org.adempiere.ui,
+ zcommon;bundle-version="0.0.0",
+ zel;bundle-version="0.0.0",
+ zhtml;bundle-version="0.0.0",
+ zk;bundle-version="0.0.0",
+ zkbind;bundle-version="0.0.0",
+ zkplus;bundle-version="0.0.0",
+ zul;bundle-version="0.0.0",
+ zweb;bundle-version="0.0.0",
+ com.kylinsystems.kbs.odt;bundle-version="0.0.0"
+Bundle-Activator: org.adempiere.plugin.utils.Incremental2PackActivator
+Service-Component: OSGI-INF/*.xml
+Import-Package: org.adempiere.pipo2.exception,
+ org.compiere.grid.ed,
+ org.osgi.service.event;version="1.3.0"
+Bundle-Vendor: KBS
+Automatic-Module-Name: com.kylinsystems.kbs.plugins.ingeint.pos
